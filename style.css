@@ -1,0 +1,214 @@
+/*Menu drop-down*/
+	  	   * {
+	  	 margin: 0;
+	  	 padding: 0;
+				box-sizing: border-box;
+			
+			}
+			html, body {
+				height: 100%;			
+			}
+			.container {				
+				position: relative;
+				display: inline-block;
+				height: 100%;
+			}
+					
+			#label-1 {				
+				font-size: 2.4em;				
+				line-height: 60px;				
+				cursor: pointer;
+				transition: .5s ease;
+				color: #000;				
+				transition: 2s;					
+			}		
+			#label-2 {
+				color: transparent;
+				margin-left: -40px;		
+			}
+			
+	  .label-container {
+	   	 position: absolute;
+    		margin-top: -60px;
+    		background: none;			
+	    	margin-left: 0px;		
+	    	height: 55px;
+	    	width: 70px;
+	    	display: block;
+	    	padding-left: 15px;
+	    	border-radius: 25px;
+	    	
+  	}	
+  	
+  	#toggle {
+  		display: none;
+  	}
+			.nav > a {
+				display: block;
+				line-height: 30px;
+				text-decoration: none;
+				color: #000;
+				padding-left: 25px;
+				padding-top: 20px;
+				font-size: 20px;
+			}
+			.nav > a:hover {
+				background: rgba(0,0,0,.7);
+				color: #fff;
+				border-left: 5px solid #fff;
+				box-shadow: 0px 10px 10px;
+				padding-left: 40px;
+			}
+			.nav {
+				position: absolute;
+				width: 300px;
+				height: 0px;
+				transition: height 1s;
+				margin-left: 10px;
+				background: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+				overflow: hidden;
+				border-radius: 30px;
+			}
+			
+			#toggle:checked ~ nav {
+				height: 310px;
+			}
+			
+			
+			 #toggle:checked ~ .label-container > #label-1 {
+				color: transparent;
+			}
+			
+			#toggle:checked ~ .label-container > #label-2 {
+				font-size: 2.4em;				
+				line-height: 60px;				
+				cursor: pointer;
+				transition: .5s ease;
+				color: #000;				
+				transition: 1s;					
+			}
+			
+			 /* buttons in menu*/
+			      /*btn-1*/
+			#btn-1 {
+				background: none;
+				border: none;
+				font-size: 20px;
+				padding-top: 15px;
+				padding-left: 18px;
+				font-family:Times New Roman;
+			}
+			.btn-1-body {
+				position: absolute;
+				width: 0px;
+				height: 90px;
+				background: transparent;				
+				margin-left: 110px;
+				margin-top: -30px;
+				overflow: hidden;
+				transition: width 1s
+			}					
+			.btn-1-body > a {
+				text-decoration: none;
+				color: #000;
+				font-size: 13px;
+				display: block;
+				padding-top: 10px;
+			}
+			.btn-1-body a:hover {
+				background: #000;
+				color: #fff;
+			}
+			#btn-1:hover > .btn-1-body {
+				width: 100px;
+				border: 1px solid black;
+			}
+			       /*btn-2*/
+			 #btn-2 {
+				background: none;
+				border: none;
+				font-size: 20px;
+				padding-top: 15px;
+				padding-left: 18px;
+				font-family: Times New Roman;
+			}
+			.btn-2-body {
+				position: absolute;
+				width: 0px;
+				height: 90px;
+				background: transparent;				
+				margin-left: 110px;
+				margin-top: -30px;
+				overflow: hidden;
+				transition: width 1s
+			}					
+			.btn-2-body > a {
+				text-decoration: none;
+				color: #000;
+				font-size: 13px;
+				display: block;
+				padding-top: 10px;
+			}
+			.btn-2-body a:hover {
+				background: #000;
+				color: #fff;
+			}
+			#btn-2:hover > .btn-2-body {
+				width: 100px;
+				border: 1px solid black;
+			}
+	    		/* menu end*/
+	    		
+	  @font-face {
+				font-family: myFont-1;
+				src: url('fonts/font-1.ttf');
+			}
+			
+			@font-face {
+				font-family: myFont-2;
+				src: url('fonts/font-2.ttf');
+			}
+			
+			@font-face {
+				font-family: myFont-5;
+				src: url('fonts/font-5.ttf');
+			}
+	      		/* search bar*/
+	.search-container {
+    display: flex;
+}
+
+.search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px; 
+    height:30px;
+    margin-left: 60px;
+    margin-top: -30px;
+    background: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);/* Adjust width as needed */
+}
+
+.search-button {
+    padding: 10px;
+    border: none;    
+    border-left: none; /* Remove left border to connect with input */
+    background-color: transparent; /* Button color */
+    color: #ccc;
+    cursor: pointer;
+    margin-left: -60px;
+    height: 20px;
+    margin-top: -30px;
+    scale: 1.4;
+}
+
+.search-button:hover {
+    background-color: #434190; /* Darker shade on hover */
+}
+              ```
+			
+	.f-collection > a {
+		 text-decoration: none;
+		 color: #000;
+		
+	}
